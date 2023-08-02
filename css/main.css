@@ -1,0 +1,368 @@
+@media only screen and (max-width: 1400px) {
+    .main__side .main-img {
+        display: none;
+    }
+
+    .main-img {
+        position: static;
+        text-align: center;
+    }
+
+    .navbar__side {
+        padding: 30px;
+    }
+}
+
+.recomendations,
+.education {
+    margin-bottom: 70px;
+}
+
+.recomendations .rec-title,
+.education .edu-title {
+    max-width: 438px;
+    margin: 0 auto;
+}
+
+.rec-title .rec-title__inner,
+.edu-title .edu-title__inner {
+    font-size: 32px;
+    color: var(--black);
+    font-weight: 700;
+    line-height: 123.6%;
+}
+
+.profile-avatar img {
+    border-radius: 50%;
+}
+
+.rec-title .rec-title-desc,
+.edu-title .edu-title-desc {
+    margin-top: 25px;
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: 400;
+    margin-bottom: 50px;
+}
+
+.rec-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 27px;
+    flex-wrap: wrap;
+}
+
+.rec-item {
+    width: 310px;
+    background-color: var(--white);
+    padding: 25px;
+    text-align: start;
+}
+
+.rec-item-desc {
+    font-size: 15px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+.item-stars>ul {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 16.63px;
+}
+
+.item-stars>ul i {
+    color: var(--yellow);
+    font-size: 18px;
+}
+
+.rec-item-title {
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--black);
+    margin-bottom: 18px;
+}
+
+.rec-item-profile {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 13px;
+}
+
+.rec-item-profile .profile-name {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 123.6%;
+    color: var(--black);
+}
+
+.rec-item-profile .profile-job {
+    font-size: 15px;
+}
+
+.recomendations .dots {
+    margin-top: 50px;
+}
+
+.plans-header {
+    position: relative;
+}
+
+.back-transparent-img {
+    position: fixed;
+    z-index: -10;
+    opacity: .1;
+    top: 0;
+    left: -170px;
+}
+
+.button-scroll-up {
+    color: var(--yellow);
+    display: none;
+    padding: 20px 25px;
+    border-radius: 50%;
+    font-size: 20px;
+    background-color: var(--white);
+    border: 1px solid var(--yellow);
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    transition: all .3s linear;
+}
+
+.button-scroll-up:hover {
+    cursor: pointer;
+    background-color: var(--yellow) !important;
+    color: var(--white);
+}
+
+section.profile {
+    width: fit-content;
+    position: relative;
+    margin: 0 auto;
+}
+
+.profile-img {
+    position: relative;
+    width: 150px;
+    overflow: hidden;
+    clip-path: circle();
+    height: 150px;
+    background-color: var(--background);
+    margin-bottom: 31px;
+    transition: all 1s ease;
+}
+
+.profile-img img {
+    position: absolute;
+    width: 100%;
+    top: 15px;
+}
+
+.profile__side .profile-name {
+    color: var(--black);
+    font-weight: 500;
+    line-height: 123.6%;
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.profile__side .profile-job {
+    font-size: 15px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#online-status {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.profile__side .profile-links ul {
+    display: flex;
+    gap: 15px;
+}
+
+.profile__side .profile-links ul>a {
+    background-color: var(--yellow);
+    color: var(--black);
+    padding: 7px;
+    clip-path: circle();
+    font-size: 13px;
+    text-align: center;
+}
+
+.profile__side .profile-links {
+    width: fit-content;
+    margin: 0 auto;
+    margin-bottom: 25px;
+}
+
+.profile-private-data {
+    padding-bottom: 25px;
+    padding-top: 25px;
+    margin-bottom: 25px;
+    border-bottom: 1px solid rgb(223, 223, 223);
+    border-top: 1px solid rgb(223, 223, 223);
+}
+
+.profile-private-data #profile-info {
+    width: fit-content;
+    height: min-content;
+    padding: 0 5px;
+    background-color: var(--yellow);
+    color: var(--black);
+}
+
+.profile-private-data #profile-info::after {
+    content: ":";
+}
+
+.profile-private-data>div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.profile-private-data>div>h5 {
+    font-size: 15px;
+    text-align: right;
+    color: var(--black);
+    font-weight: 400;
+}
+
+.freelance-value.active-value {
+    color: var(--available);
+}
+
+h4.languages-title,
+h4.skills-title,
+h4.extra-skills-title {
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--black);
+}
+
+main.languages-main,
+main.skills-main,
+main.extra-skills-main {
+    margin-top: 15px;
+}
+
+section.language,
+section.skill,
+section.extra-skill {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+section.extra-skill {
+    justify-content: start;
+    gap: 15px;
+}
+
+.language__inner,
+.skill__inner {
+    margin-bottom: 9px;
+}
+
+.profile-languages,
+.profile-skills,
+.extra-skills {
+    padding-bottom: 25px;
+    margin-bottom: 25px;
+    border-bottom: 1px solid rgb(223, 223, 223);
+}
+
+section.resume-csv .btn-download {
+    width: 100%;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 600;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 19px;
+    background-color: var(--yellow);
+}
+
+main.edu-main {
+    max-width: 1100px;
+    margin: 0 auto;
+    background-color: var(--white);
+}
+
+.edu-item {
+    max-width: 1000px;
+    padding: 51px 0;
+    margin: 0 50px;
+    display: flex;
+    justify-content: space-between;
+    text-align: start;
+    flex-wrap: wrap;
+    gap: 120px;
+    padding-bottom: 11px;
+    border-bottom: 1px solid rgb(223, 223, 223);
+}
+
+.edu-item-title .main-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 190px;
+}
+
+.edu-item-title .item-title__inner,
+.edu-item-desc .edu-desc-title {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 123.6%;
+    margin-bottom: 25px;
+    color: var(--black);
+}
+
+.edu-item-desc {
+    max-width: 536px;
+}
+
+.edu-item-desc .edu-desc-inner {
+    font-size: 15px;
+}
+
+.main-info .info-name {
+    font-size: 15px;
+}
+
+.main-info p {
+    color: var(--white);
+    text-align: center;
+    padding: 4px 7px;
+    font-size: 10px;
+    line-height: 100.9%;
+    background-color: var(--yellow);
+    width: 111px;
+}
+
+.edu-item.last-item {
+    border: none;
+    padding-bottom: 40px;
+}
+
+.footer-wrapper {
+    margin-top: 150px;
+    width: 100%;
+    padding: 18px 0;
+    background-color: var(--white);
+}
+
+.footer-wrapper h5 {
+    color: var(--black);
+    font-size: 15px;
+}
