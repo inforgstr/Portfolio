@@ -1,15 +1,84 @@
 @media only screen and (max-width: 1400px) {
     .main__side .main-img {
         display: none;
-    }
-
-    .main-img {
         position: static;
         text-align: center;
     }
 
     .navbar__side {
         padding: 30px;
+    }
+}
+
+@media only screen and (max-width: 1050px) {
+    .wrapper {
+        gap: 10px;
+        grid-template-areas: 
+            "main nav"
+            "m-content nav";
+        grid-template-columns: 7fr 1.2fr;
+    }
+
+    .main-wrapper .intro-title {
+        font-size: 35px;
+    }
+
+    .e-4 {
+        display: none;
+    }
+
+    .r-1 {
+        display: none;
+    }
+
+    .p-1 {
+        display: none;
+    }
+
+    .profile__side {
+        display: none;
+    }
+
+    .main-content {
+        margin-top: 40px;
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .wrapper {
+        display: initial;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 
+            "main"
+            "m-content";
+    }
+    .navbar__side,
+    .button-scroll-up {
+        display: none;
+    }
+    
+    .main-wrapper {
+        max-width: 430px;
+        margin: 0 auto;
+    }
+
+    .main-intro {
+        max-width: 300px;
+    }
+
+    .main__side {
+        padding: 30px;
+    }
+
+    .price-plans .plans-header,
+    .main-content .content {
+        max-width: 300px;
+    }
+
+    .main-content {
+        padding-top: 40px;
+        max-width: 390px;
     }
 }
 
@@ -147,6 +216,7 @@
     bottom: 20px;
     right: 20px;
     transition: all .3s linear;
+    z-index: 1;
 }
 
 .button-scroll-up:hover {
