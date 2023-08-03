@@ -17,12 +17,12 @@
     display: none;
 }
 
-#line>rect:first-child,
+.pers-line>rect:first-child,
 .extra-skill>svg>rect {
     stroke: var(--yellow);
 }
 
-#line>rect:last-child {
+.pers-line>rect:last-child {
     fill: var(--yellow);
 }
 
