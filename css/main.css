@@ -59,7 +59,7 @@
     }
     
     .main-wrapper {
-        max-width: 430px;
+        max-width: 100%;
         margin: 0 auto;
     }
 
@@ -78,7 +78,7 @@
 
     .main-content {
         padding-top: 40px;
-        max-width: 390px;
+        margin: 0 auto;
     }
 }
 
