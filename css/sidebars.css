@@ -89,8 +89,8 @@
 
 .btn-hire:hover {
     cursor: pointer;
-    background-color: var(--yellow-3);
-    color: #5c5c5c;
+    background-color: var(--yellow-2);
+    color: var(--black);
 }
 
 .btn-hire i {
@@ -223,6 +223,10 @@
     animation: selected .8s infinite;
 }
 
+.navbar-nav .selected .sel-img svg path {
+    fill: var(--black);
+}
+
 .navbar-nav .selected:hover {
     cursor: default;
 }
@@ -316,8 +320,8 @@
 
 .service-item:hover {
     cursor: pointer;
-    transform: scale(1.1);
-    box-shadow: 0px 1px 5px gray;
+    transform: scale(1.081);
+    box-shadow: 0px 1px 5px var(--bottom-line);
 }
 
 .price-plans {

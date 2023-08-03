@@ -13,6 +13,23 @@
     }
 }
 
+.theme-change>i {
+    display: none;
+}
+
+#line>rect:first-child,
+.extra-skill>svg>rect {
+    stroke: var(--yellow);
+}
+
+#line>rect:last-child {
+    fill: var(--yellow);
+}
+
+#service-icon path {
+    fill: var(--yellow);
+}
+
 .recomendations,
 .education {
     margin-bottom: 70px;
@@ -73,7 +90,7 @@
 }
 
 .item-stars>ul i {
-    color: var(--yellow);
+    color: #FFB400;
     font-size: 18px;
 }
 
@@ -152,7 +169,7 @@ section.profile {
     height: 150px;
     background-color: var(--background);
     margin-bottom: 31px;
-    transition: all 1s ease;
+    transition: all .5s ease-in-out;
 }
 
 .profile-img img {
@@ -206,8 +223,8 @@ section.profile {
     padding-bottom: 25px;
     padding-top: 25px;
     margin-bottom: 25px;
-    border-bottom: 1px solid rgb(223, 223, 223);
-    border-top: 1px solid rgb(223, 223, 223);
+    border-bottom: 1px solid var(--bottom-line);
+    border-top: 1px solid var(--bottom-line);
 }
 
 .profile-private-data #profile-info {
@@ -277,7 +294,7 @@ section.extra-skill {
 .extra-skills {
     padding-bottom: 25px;
     margin-bottom: 25px;
-    border-bottom: 1px solid rgb(223, 223, 223);
+    border-bottom: 1px solid var(--bottom-line);
 }
 
 section.resume-csv .btn-download {
@@ -291,6 +308,13 @@ section.resume-csv .btn-download {
     justify-content: center;
     gap: 19px;
     background-color: var(--yellow);
+    color: var(--paragraph-font);
+    transition: all .7s ease;
+}
+
+section.resume-csv .btn-download:hover {
+    cursor: pointer;
+    background-color: var(--yellow-2);
 }
 
 main.edu-main {
@@ -309,7 +333,7 @@ main.edu-main {
     flex-wrap: wrap;
     gap: 120px;
     padding-bottom: 11px;
-    border-bottom: 1px solid rgb(223, 223, 223);
+    border-bottom: 1px solid var(--bottom-line);
 }
 
 .edu-item-title .main-info {
@@ -341,7 +365,7 @@ main.edu-main {
 }
 
 .main-info p {
-    color: var(--white);
+    color: #FFFFFF;
     text-align: center;
     padding: 4px 7px;
     font-size: 10px;
