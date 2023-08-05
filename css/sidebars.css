@@ -16,15 +16,17 @@
 }
 
 .navbar__side {
+    position: sticky;
+    top: 0;
     grid-area: nav;
-    height: 1130px;
-    border-bottom-left-radius: 150px;
+    height: 910px;
 }
 
 .main__side {
     grid-area: main;
     position: relative;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     gap: 20px;
     margin: 0 auto;

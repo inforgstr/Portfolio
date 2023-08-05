@@ -1,8 +1,6 @@
 @media only screen and (max-width: 1400px) {
-    .main__side .main-img {
+    .main__side .main-img img {
         display: none;
-        position: static;
-        text-align: center;
     }
 
     .navbar__side {
@@ -10,13 +8,13 @@
     }
 }
 
-@media only screen and (max-width: 1050px) {
+@media only screen and (max-width: 1180px) {
     .wrapper {
         gap: 10px;
-        grid-template-areas: 
+        grid-template-areas:
             "main nav"
             "m-content nav";
-        grid-template-columns: 7fr 1.2fr;
+        grid-template-columns: 5fr 1.2fr;
     }
 
     .main-wrapper .intro-title {
@@ -43,21 +41,28 @@
         margin-top: 40px;
         width: 100%;
     }
+
+    .navbar__side {
+        position: sticky;
+        top: 0;
+        right: 0;
+        max-width: 250px;
+    }
 }
 
 @media only screen and (max-width: 550px) {
     .wrapper {
         display: initial;
         grid-template-rows: 1fr 1fr;
-        grid-template-areas: 
+        grid-template-areas:
             "main"
             "m-content";
     }
-    .navbar__side,
-    .button-scroll-up {
+
+    .navbar__side {
         display: none;
     }
-    
+
     .main-wrapper {
         max-width: 100%;
         margin: 0 auto;
@@ -106,7 +111,7 @@
 
 .recomendations .rec-title,
 .education .edu-title {
-    max-width: 438px;
+    max-width: 300px;
     margin: 0 auto;
 }
 
@@ -202,27 +207,6 @@
     opacity: .1;
     top: 0;
     left: -170px;
-}
-
-.button-scroll-up {
-    color: var(--yellow);
-    display: none;
-    padding: 20px 25px;
-    border-radius: 50%;
-    font-size: 20px;
-    background-color: var(--white);
-    border: 1px solid var(--yellow);
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    transition: all .3s linear;
-    z-index: 1;
-}
-
-.button-scroll-up:hover {
-    cursor: pointer;
-    background-color: var(--yellow) !important;
-    color: var(--white);
 }
 
 section.profile {
@@ -378,7 +362,7 @@ section.resume-csv .btn-download {
     justify-content: center;
     gap: 19px;
     background-color: var(--yellow);
-    color: var(--paragraph-font);
+    color: var(--white);
     transition: all .7s ease;
 }
 
